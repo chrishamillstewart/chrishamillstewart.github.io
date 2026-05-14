@@ -1,19 +1,35 @@
 {
-  "World Economic Forum": [],
+  "World Economic Forum": [
+    {
+      "title": "Why Europe may pursue tighter integration in a fragmenting world",
+      "url": "https://www.weforum.org/stories/2025/02/why-europe-may-pursue-tighter-integration-in-a-fragmenting-world/",
+      "year": "2025"
+    },
+    {
+      "title": "It's a triple COP year: What that means for business leaders",
+      "url": "https://www.weforum.org/stories/2024/10/triple-cop-year-land-biodiversity-climate-change-pledges/",
+      "year": "2024"
+    },
+    {
+      "title": "The ‘missed opportunity’ with AI's linguistic diversity gap",
+      "url": "https://www.weforum.org/stories/2024/09/ai-linguistic-diversity-gap-missed-opportunity/",
+      "year": "2024"
+    },
+    {
+      "title": "4 ways to finance the energy transition in emerging economies",
+      "url": "https://www.weforum.org/stories/2024/01/finance-energy-transition-emerging-economies-climate-crisis/",
+      "year": "2024"
+    },
+    {
+      "title": "This is the one skill everybody needs in the age of AI",
+      "url": "https://www.weforum.org/stories/2024/01/this-is-the-one-skill-everybody-needs-in-the-age-of-ai/",
+      "year": "2024"
+    }
+  ],
   "AGBI": [
     {
-      "title": "Adia in investment talks with Bezos-led Project Prometheus",
-      "url": "https://www.agbi.com/ai/2026/02/adia-in-investment-talks-with-bezos-led-project-prometheus/",
-      "year": "2026"
-    },
-    {
-      "title": "Iranian wallets move millions in crypto despite internet blackout",
-      "url": "https://www.agbi.com/banking-finance/2026/03/iranian-wallets-move-millions-in-crypto-despite-internet-blackout/",
-      "year": "2026"
-    },
-    {
-      "title": "Mena startup investors urged to hold nerve through Iran conflict",
-      "url": "https://www.agbi.com/analysis/finance/2026/03/mena-startup-investors-urged-to-hold-nerve-through-iran-conflict/",
+      "title": "Qatar’s Ooredoo creates dedicated cable spin-off OFN",
+      "url": "https://www.agbi.com/analysis/tech/2026/03/qatars-ooredoo-creates-dedicated-cable-spin-off-ofn/",
       "year": "2026"
     },
     {
@@ -22,25 +38,25 @@
       "year": "2026"
     },
     {
-      "title": "Qatar’s Ooredoo creates dedicated cable spin-off OFN",
-      "url": "https://www.agbi.com/analysis/tech/2026/03/qatars-ooredoo-creates-dedicated-cable-spin-off-ofn/",
+      "title": "Mena startup investors urged to hold nerve through Iran conflict",
+      "url": "https://www.agbi.com/analysis/finance/2026/03/mena-startup-investors-urged-to-hold-nerve-through-iran-conflict/",
+      "year": "2026"
+    },
+    {
+      "title": "Iranian wallets move millions in crypto despite internet blackout",
+      "url": "https://www.agbi.com/banking-finance/2026/03/iranian-wallets-move-millions-in-crypto-despite-internet-blackout/",
+      "year": "2026"
+    },
+    {
+      "title": "Adia in investment talks with Bezos-led Project Prometheus",
+      "url": "https://www.agbi.com/ai/2026/02/adia-in-investment-talks-with-bezos-led-project-prometheus/",
       "year": "2026"
     }
   ],
   "Wired Middle East": [
     {
-      "title": "The Middle East’s AI Spending Is Becoming a Two-Horse Race",
-      "url": "https://www.wired.me/story/the-middle-easts-ai-spending-is-becoming-a-two-horse-race",
-      "year": "2026"
-    },
-    {
-      "title": "Just Because It’s Raining Doesn’t Mean It’s Cloud Seeding",
-      "url": "https://www.wired.me/story/just-because-its-raining-doesnt-mean-its-cloud-seeding",
-      "year": "2026"
-    },
-    {
-      "title": "The Gulf’s Remittance Infrastructure Faces Risks, But Remains Intact During War",
-      "url": "https://www.wired.me/story/the-gulfs-remittance-infrastructure-is-passing-the-war-test",
+      "title": "Why Gulf Data Centres Are Now as Strategic as Oil",
+      "url": "https://www.wired.me/story/why-gulf-data-centres-are-now-as-strategic-as-oil",
       "year": "2026"
     },
     {
@@ -49,8 +65,18 @@
       "year": "2026"
     },
     {
-      "title": "Why Gulf Data Centres Are Now as Strategic as Oil",
-      "url": "https://www.wired.me/story/why-gulf-data-centres-are-now-as-strategic-as-oil",
+      "title": "The Gulf’s Remittance Infrastructure Faces Risks, But Remains Intact During War",
+      "url": "https://www.wired.me/story/the-gulfs-remittance-infrastructure-is-passing-the-war-test",
+      "year": "2026"
+    },
+    {
+      "title": "Just Because It’s Raining Doesn’t Mean It’s Cloud Seeding",
+      "url": "https://www.wired.me/story/just-because-its-raining-doesnt-mean-its-cloud-seeding",
+      "year": "2026"
+    },
+    {
+      "title": "The Middle East’s AI Spending Is Becoming a Two-Horse Race",
+      "url": "https://www.wired.me/story/the-middle-easts-ai-spending-is-becoming-a-two-horse-race",
       "year": "2026"
     }
   ],
