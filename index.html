@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Chris Hamill-Stewart - digital journalist and editor covering business, technology and current affairs with a focus on the Middle East and North Africa.">
+<meta property="og:title" content="Chris Hamill-Stewart - Journalist & Editor">
+<meta property="og:description" content="Eight years covering business, technology and geopolitics with a MENA focus. WEF Digital Editor. Based in Marseille.">
+<title>Chris Hamill-Stewart</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ink: #1a1814;
+    --ink-mid: #4a4640;
+    --ink-light: #8a8680;
+    --paper: #f7f5f0;
+    --rule: #d8d4cc;
+    --accent: #c8502a;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: Arial, Helvetica, sans-serif; background: var(--paper); color: var(--ink); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; padding: 1.1rem 2.5rem; background: var(--paper); border-bottom: 1px solid var(--rule); }
+  .nav-name { font-size: 0.95rem; font-weight: 700; color: var(--ink); }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { font-size: 0.78rem; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-mid); transition: color 0.2s; }
+  .nav-links a:hover { color: var(--accent); }
+  .hero { padding: 9rem 2.5rem 5rem; max-width: 860px; }
+  .hero-label { font-size: 0.75rem; font-weight: 400; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 1.25rem; display: flex; align-items: center; gap: 0.75rem; }
+  .hero-label::before { content: ''; display: block; width: 2rem; height: 1px; background: var(--accent); }
+  .hero h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); font-weight: 700; line-height: 1.1; letter-spacing: -0.02em; color: var(--ink); margin-bottom: 1.5rem; }
+  .hero-bio { font-size: 1rem; line-height: 1.8; color: var(--ink-mid); max-width: 540px; margin-bottom: 2rem; }
+  .hero-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2rem; }
+  .tag { font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.3rem 0.75rem; border: 1px solid var(--rule); color: var(--ink-mid); }
+  .btn-row { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+  .btn { display: inline-flex; align-items: center; font-family: Arial, Helvetica, sans-serif; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.75rem 1.5rem; transition: all 0.2s; border: 1px solid transparent; }
+  .btn-primary { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .btn-primary:hover { background: var(--accent); border-color: var(--accent); }
+  .btn-outline { background: transparent; color: var(--ink); border-color: var(--rule); }
+  .btn-outline:hover { border-color: var(--ink); }
+  section { padding: 5rem 2.5rem; border-top: 1px solid var(--rule); }
+  .section-inner { max-width: 860px; }
+  .section-header { display: flex; align-items: baseline; gap: 1rem; margin-bottom: 2.5rem; }
+  .section-num { font-size: 0.72rem; letter-spacing: 0.1em; color: var(--accent); }
+  .section-title { font-size: 1rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink); }
+  .outlet-group { margin-bottom: 2.5rem; }
+  .outlet-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--rule); }
+  .outlet-name { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-mid); }
+  .outlet-count { font-size: 0.7rem; color: var(--ink-light); }
+  .clips-list { display: flex; flex-direction: column; }
+  .clip { display: flex; align-items: baseline; gap: 1.25rem; padding: 0.65rem 0; border-bottom: 1px solid transparent; transition: border-color 0.15s; }
+  .clip:hover { border-bottom-color: var(--rule); }
+  .clip-year { font-size: 0.7rem; color: var(--ink-light); white-space: nowrap; min-width: 2.5rem; flex-shrink: 0; }
+  .clip a { font-size: 0.95rem; color: var(--ink); line-height: 1.5; transition: color 0.15s; }
+  .clip a:hover { color: var(--accent); }
+  .clips-loading { font-size: 0.85rem; color: var(--ink-light); padding: 1rem 0; }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+  .contact-cell { background: var(--paper); padding: 1.5rem 2rem; display: flex; flex-direction: column; gap: 0.35rem; }
+  .contact-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-light); }
+  .contact-val { font-size: 0.95rem; color: var(--ink); }
+  a.contact-val:hover { color: var(--accent); }
+  footer { padding: 1.5rem 2.5rem; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; align-items: center; }
+  .footer-name { font-size: 0.82rem; font-weight: 700; color: var(--ink-light); }
+  .footer-note { font-size: 0.7rem; color: var(--ink-light); }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+  .hero > * { opacity: 0; animation: fadeUp 0.6s ease forwards; }
+  .hero-label { animation-delay: 0.05s; }
+  .hero h1 { animation-delay: 0.15s; }
+  .hero-bio { animation-delay: 0.25s; }
+  .hero-tags { animation-delay: 0.35s; }
+  .btn-row { animation-delay: 0.45s; }
+  @media (max-width: 640px) {
+    nav { padding: 1rem 1.25rem; }
+    .nav-links { gap: 1.25rem; }
+    .hero { padding: 7rem 1.25rem 3.5rem; }
+    section { padding: 3.5rem 1.25rem; }
+    .contact-grid { grid-template-columns: 1fr; }
+    footer { flex-direction: column; gap: 0.4rem; text-align: center; }
+  }
+</style>
+</head>
+<body>
+<nav>
+  <span class="nav-name">Chris Hamill-Stewart</span>
+  <ul class="nav-links">
+    <li><a href="#clips">Work</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+<div class="hero">
+  <p class="hero-label">Digital journalist &amp; editor</p>
+  <h1>Business, technology<br>and current affairs.</h1>
+  <p class="hero-bio">Eight years covering business, technology and geopolitics with a focus on the Middle East and North Africa. Currently WEF Digital Editor. Former Interim Technology Editor at AGBI. Based in Marseille.</p>
+  <div class="hero-tags">
+    <span class="tag">Business</span>
+    <span class="tag">Technology</span>
+    <span class="tag">MENA</span>
+    <span class="tag">SEO &amp; data</span>
+    <span class="tag">Commercial content</span>
+    <span class="tag">Multi-platform</span>
+  </div>
+  <div class="btn-row">
+    <a class="btn btn-primary" href="cv.pdf" download>Download CV</a>
+    <a class="btn btn-outline" href="#contact">Get in touch</a>
+    <a class="btn btn-outline" href="https://www.linkedin.com/in/christopher-hamill-stewart/" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</div>
+<section id="clips">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">Selected work</h2>
+    </div>
+    <div id="clips-container">
+      <p class="clips-loading">Loading&hellip;</p>
+    </div>
+  </div>
+</section>
+<section id="experience">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Experience</h2>
+    </div>
+    <p style="font-size: 0.95rem; color: var(--ink-mid); line-height: 1.8;">Currently editing for the World Economic Forum, writing on tech in the Middle East for Wired and others. <a href="cv.pdf" download style="color: var(--accent); text-decoration: underline; text-underline-offset: 3px;">Download CV for full details.</a></p>
+  </div>
+</section>
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Contact</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-cell">
+        <span class="contact-label">Email</span>
+        <a class="contact-val" href="mailto:chamillstewart@gmail.com">chamillstewart@gmail.com</a>
+      </div>
+      <div class="contact-cell">
+        <span class="contact-label">Based in</span>
+        <span class="contact-val">Marseille, France</span>
+      </div>
+      <div class="contact-cell">
+        <span class="contact-label">LinkedIn</span>
+        <a class="contact-val" href="https://www.linkedin.com/in/christopher-hamill-stewart/" target="_blank" rel="noopener">christopher-hamill-stewart</a>
+      </div>
+      <div class="contact-cell">
+        <span class="contact-label">Available for</span>
+        <span class="contact-val">Commissions &amp; staff roles</span>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <span class="footer-name">Chris Hamill-Stewart</span>
+  <span class="footer-note">Updated weekly</span>
+</footer>
+<script>
+  async function loadClips() {
+    const container = document.getElementById('clips-container');
+    try {
+      const res = await fetch('clips.json');
+      if (!res.ok) throw new Error('fetch failed');
+      const clips = await res.json();
+      const outlets = Object.keys(clips).filter(o => clips[o].length > 0);
+      if (outlets.length === 0) { container.innerHTML = '<p class="clips-loading">No clips yet.</p>'; return; }
+      container.innerHTML = outlets.map(outlet => {
+        const articles = clips[outlet];
+        const rows = articles.map(a => `<div class="clip"><span class="clip-year">${a.year}</span><a href="${a.url}" target="_blank" rel="noopener">${a.title}</a></div>`).join('');
+        return `<div class="outlet-group"><div class="outlet-header"><span class="outlet-name">${outlet}</span><span class="outlet-count">${articles.length} piece${articles.length !== 1 ? 's' : ''}</span></div><div class="clips-list">${rows}</div></div>`;
+      }).join('');
+    } catch (e) {
+      container.innerHTML = '<p class="clips-loading">Could not load clips - check back soon.</p>';
+    }
+  }
+  loadClips();
+</script>
+</body>
+</html>

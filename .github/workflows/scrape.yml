@@ -1,0 +1,28 @@
+name: Weekly clips scraper
+
+on:
+  schedule:
+    - cron: '0 7 * * 1'
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run scraper
+        run: python scraper/scrape.py
+      - name: Commit updated clips.json if changed
+        run: |
+          git config user.name  "clips-bot"
+          git config user.email "clips-bot@users.noreply.github.com"
+          git add clips.json
+          git diff --cached --quiet || git commit -m "chore: update clips [automated]"
+          git push
