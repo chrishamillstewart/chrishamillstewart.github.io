@@ -1,6 +1,24 @@
 {
-  "World Economic Forum": [],
-  "AGBI": [],
-  "Wired Middle East": [],
+  "World Economic Forum": [
+    {
+      "title": "Gulf AI infrastructure and the new geopolitics of compute",
+      "url": "https://www.weforum.org/stories/",
+      "year": "2025"
+    }
+  ],
+  "AGBI": [
+    {
+      "title": "Inside the Gulf's billion-dollar bet on artificial intelligence",
+      "url": "https://www.agbi.com/author/chrishamillstewart/",
+      "year": "2025"
+    }
+  ],
+  "Wired Middle East": [
+    {
+      "title": "Compute as geopolitical infrastructure: the Gulf's AI arms race",
+      "url": "https://www.wired.me/author/chris-hamill-stewart/",
+      "year": "2025"
+    }
+  ],
   "Computer Weekly": []
 }
