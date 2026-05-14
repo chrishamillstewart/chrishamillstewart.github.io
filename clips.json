@@ -1,23 +1,57 @@
 {
-  "World Economic Forum": [
-    {
-      "title": "Gulf AI infrastructure and the new geopolitics of compute",
-      "url": "https://www.weforum.org/stories/",
-      "year": "2025"
-    }
-  ],
+  "World Economic Forum": [],
   "AGBI": [
     {
-      "title": "Inside the Gulf's billion-dollar bet on artificial intelligence",
-      "url": "https://www.agbi.com/author/chrishamillstewart/",
-      "year": "2025"
+      "title": "Adia in investment talks with Bezos-led Project Prometheus",
+      "url": "https://www.agbi.com/ai/2026/02/adia-in-investment-talks-with-bezos-led-project-prometheus/",
+      "year": "2026"
+    },
+    {
+      "title": "Iranian wallets move millions in crypto despite internet blackout",
+      "url": "https://www.agbi.com/banking-finance/2026/03/iranian-wallets-move-millions-in-crypto-despite-internet-blackout/",
+      "year": "2026"
+    },
+    {
+      "title": "Mena startup investors urged to hold nerve through Iran conflict",
+      "url": "https://www.agbi.com/analysis/finance/2026/03/mena-startup-investors-urged-to-hold-nerve-through-iran-conflict/",
+      "year": "2026"
+    },
+    {
+      "title": "Child social media restrictions to reshape Gulf advertising",
+      "url": "https://www.agbi.com/analysis/media/2026/03/child-social-media-restrictions-to-reshape-gulf-advertising/",
+      "year": "2026"
+    },
+    {
+      "title": "Qatar’s Ooredoo creates dedicated cable spin-off OFN",
+      "url": "https://www.agbi.com/analysis/tech/2026/03/qatars-ooredoo-creates-dedicated-cable-spin-off-ofn/",
+      "year": "2026"
     }
   ],
   "Wired Middle East": [
     {
-      "title": "Compute as geopolitical infrastructure: the Gulf's AI arms race",
-      "url": "https://www.wired.me/author/chris-hamill-stewart/",
-      "year": "2025"
+      "title": "The Middle East’s AI Spending Is Becoming a Two-Horse Race",
+      "url": "https://www.wired.me/story/the-middle-easts-ai-spending-is-becoming-a-two-horse-race",
+      "year": "2026"
+    },
+    {
+      "title": "Just Because It’s Raining Doesn’t Mean It’s Cloud Seeding",
+      "url": "https://www.wired.me/story/just-because-its-raining-doesnt-mean-its-cloud-seeding",
+      "year": "2026"
+    },
+    {
+      "title": "The Gulf’s Remittance Infrastructure Faces Risks, But Remains Intact During War",
+      "url": "https://www.wired.me/story/the-gulfs-remittance-infrastructure-is-passing-the-war-test",
+      "year": "2026"
+    },
+    {
+      "title": "Black Rain Fell on Tehran. Then the Real Damage Began.",
+      "url": "https://www.wired.me/story/the-unseen-impact-of-war-on-the-environment",
+      "year": "2026"
+    },
+    {
+      "title": "Why Gulf Data Centres Are Now as Strategic as Oil",
+      "url": "https://www.wired.me/story/why-gulf-data-centres-are-now-as-strategic-as-oil",
+      "year": "2026"
     }
   ],
   "Computer Weekly": []
